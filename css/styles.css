@@ -6,7 +6,7 @@
    --azulClarito: #D2DBEE;
    --negro: #000000;
    --blanco: #FFFFFF;
-   --blancoTransparente: rgba( 248, 249, 249, .7 );
+   --blancoTransparente: rgba( 255, 255, 255, .7 );
 }
 
 html {
@@ -50,8 +50,10 @@ img {
     max-width: 100%;
 }
 
-.father {
-    background-image: url(../img/background.jpg);
+main {
+    width: 100%;
+    background-size: cover;
+    background-image: url(https://landingpagescol.com/wp-content/uploads/2021/10/Recurso-10.jpg);
 }
 
 /*Titulos*/
@@ -65,30 +67,38 @@ img {
 
 /*DISPOSICION*/
 
-@media (min-width: 768px) {
-    .father {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+.padre {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    height: 99vh;
+}
+div.hijo1:nth-child(1) {
+    background: var(--blancoTransparente);
+    margin: 25% 25%;
+    border-radius: 2rem;
+    width: 60%;
 }
 
-.titulo {
-    width: 50%;
-    height: 98%;
-    background-color: var(--blancoTransparente);
-    padding: 3rem;
-    border-radius: 10%;
+.hijo1 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
-.titulo h1 {
-    line-height: 6rem;
+
+.titulo__regular {
+    line-height: 7rem;
+    font-size: 6rem;
 }
+
 .parrafo__titulo {
     width: 100%;
-    text-align: block;
 }
 .div__parrafo {
     width: 100%;
 }
+
 
 
 /*ESTILOS*/
@@ -97,13 +107,17 @@ img {
     background-color: var(--azulClarito);
     border-radius: 1rem;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding-top: 8rem;
-    width: 50%;
+    width: 40%;
+    margin: 25% 25%;
+    display: flex;
+    justify-content: center;
 }
 
+
 .input__login {
-    padding-top: 5rem;
+    padding-top: 4rem;
     width: 100%;
 }
 
@@ -132,7 +146,6 @@ img {
     border: none;
 }
 
-
 .input__text {
     border: none;
     padding: 1rem;
@@ -154,8 +167,8 @@ img {
 
 .icon-container {
     position: relative;
-    right: 10rem;
-    top: 5rem;
+    right: -40%;
+    top: 29%;
 }
 
 
